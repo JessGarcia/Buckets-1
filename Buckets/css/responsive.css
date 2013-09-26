@@ -1,0 +1,53 @@
+/* Cosas responsive */
+
+@media screen and (max-width: 1200px) {
+	body {
+		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAR0lEQVQYV4XQ2QkAMAgDUB3A/bdzAT8dwGKhpYdHvh8JBEXEoImqAnbQERHVcCEfTBtPlMIXhTBCH8zQBSu0YYcmZGbzn7oMGN1AZObNPBgAAAAASUVORK5CYII=) repeat;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#infoperfil figure img {
+		width: 25%;
+	}
+	#infoObra figure img {
+		width: 60%;
+	}
+
+	#comentar, .comentario, .nombre {
+		width: 60%;
+	}
+	.comentario .nombre figure  {
+		width: 20%;
+	}
+
+	.enviar {
+
+	}
+	
+
+}
+
+@media screen and (min-width: 1201px) {
+	body {
+		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQYV43M2QkAIAwEUVPE9l/gFqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA648J8tSs9rHAAAAAElFTkSuQmCC) repeat;
+	}
+	#contenedor {
+		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAR0lEQVQYV4XQ2QkAMAgDUB3A/bdzAT8dwGKhpYdHvh8JBEXEoImqAnbQERHVcCEfTBtPlMIXhTBCH8zQBSu0YYcmZGbzn7oMGN1AZObNPBgAAAAASUVORK5CYII=) repeat;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	#infoperfil figure img {
+		width: 35%;
+	}
+	#infoObra figure img {
+		width: 65%;
+	}
+	#comentar, .comentario, .nombre{
+		width: 65%;
+	}
+	.comentario .nombre figure {
+		width: 15%;
+	}
+}

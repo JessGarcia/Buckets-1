@@ -1,0 +1,367 @@
+/* -------------------------------- Fonts */
+@font-face {
+	font-family: 'iconSet';
+	src:url('fonts/iconSet.eot');
+	src:url('fonts/iconSet.eot?#iefix') format('embedded-opentype'),
+		url('fonts/iconSet.woff') format('woff'),
+		url('fonts/iconSet.ttf') format('truetype'),
+		url('fonts/iconSet.svg#iconSet') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-home, .icon-star, .icon-user, .icon-star-2, .icon-comment, .icon-checkmark {
+	font-family: 'iconSet';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	}
+
+.icon-home:before {
+	color: white;
+	content: "\e000";
+}
+.icon-star:before {
+	color: white;
+	content: "\e001";
+}
+.icon-user:before {
+	color: white;
+	content: "\e002";
+}
+.icon-star-2:before {
+	content: "\e003";
+}
+.icon-comment:before {
+	content: "\e004";
+}
+.icon-checkmark:before {
+	content: "\e005";
+}
+
+/* -------------------------------- Body */
+body {
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQYV43M2QkAIAwEUVPE9l/gFqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA648J8tSs9rHAAAAAElFTkSuQmCC) repeat;
+}
+
+#contenedor {
+	margin: 0 auto;
+	max-width: 75em;
+	min-width: 25em;
+	width: 100%;	
+}
+
+/* -------------------------------- Nav */
+nav {
+	letter-spacing: -1px;
+	margin-top: -2em;
+	width: 100%;
+	word-spacing: -1px;
+}
+	nav li {
+		display: inline-block;
+		font-size: 2em;
+		list-style: none;
+		width: 33.33%;
+	}
+		nav li div {
+			height: 1.8em;
+			text-transform: uppercase;
+			text-align: center;
+		}
+			nav li div p {
+				padding-top: 0.4em;
+			}
+				.home {
+					background-color: rgb(0, 184, 188);
+					text-align: center;
+					white-space: normal; 
+				}
+				.home:hover {
+					background-color: rgb(0, 153, 165);
+				}
+				.home:active {
+					background-color: rgb(0, 142, 142);
+				}
+
+				.favoritos {
+					background-color: rgb(0, 193, 114);
+					text-align: center;
+					white-space: normal; 
+				}
+				.favoritos:hover {
+					background-color: rgb(0, 175, 108);
+				}
+				.favoritos:active {
+					background-color: rgb(0, 160, 95);
+				}
+
+				.perfil {
+					background-color: rgb(225, 167, 44);
+					text-align: center;
+					white-space: normal; 
+				}
+				.perfil:hover {
+					background-color: rgb(228, 149, 44);
+				}
+				.perfil:active {
+					background-color: rgb(201, 129, 43);
+				}
+
+				#currentlink_home {
+					background-color: rgb(0, 184, 188);
+					height: 2.2em;
+					border-radius: 0em 0em 0.3em 0.3em;
+				}
+				#currentlink_favoritos {
+					background-color: rgb(0, 193, 114);
+					height: 2.2em;
+					border-radius: 0em 0em 0.3em 0.3em;
+				}
+				#currentlink_perfil {
+					background-color: rgb(225, 167, 44);
+					height: 2.2em;
+					border-radius: 0em 0em 0.3em 0.3em;
+				}
+
+/* -------------------------------- Section */
+section {
+	margin-left: -0.5em;
+	margin-top: 4%;
+	width: 100%;
+	text-align: center;
+}
+	section article { 
+		display: inline-block;
+		position: relative;
+		width: 30%;
+	}
+
+		section article figure img {
+			height: auto;
+			margin-top: -0.7em;
+			padding: 0.5em;
+			width: 100%;
+		}
+
+/* -------------------------------- Footer */	
+footer {
+	margin: 0 auto;
+}
+
+footer div {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0.99) 99%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(25%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.99)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	position: fixed;
+	top: 100%;
+	left: 100%;
+	width: 100%;
+	margin-top: -6.25em;
+	margin-left: -100%;
+	padding-bottom: 2em;
+}
+	footer div a figure img {
+		display: inline-block;
+		margin-left: 46%;
+		max-width: 5em;
+		max-height: 5em;
+	}
+
+/* -------------------------------- Info Perfil */
+#infoperfil {
+	display: inline-block;
+	margin: 1em 2em 0em 25%;
+	position: relative;
+}
+
+	#infoperfil figure {
+		display: inline-block;
+		height: auto;
+	}
+
+h1 {
+	font-family: 'Bubbler One', sans-serif;
+	margin-left: 1em;
+	position: relative;
+}
+
+/* -------------------------------- Info Favoritos */ 
+	
+	section article .star {
+		margin-left: 80%;
+		position: relative;
+		margin-top: -4.59em;
+	}
+
+	section article .star p {
+		font-size: 25px;
+	}
+
+	section article .rating{
+		margin-left: 89%;		
+		margin-top: -3.65em;
+		position: absolute;
+		text-align: center;
+	}
+
+	section article .rating p {
+		color: gray;
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+/* -------------------------------- Info Comentarios */
+	
+	#infoObra {
+		margin-top: 10%;
+		text-align: center;
+		width: auto;
+	}
+	 #infoObra figure{
+		text-align: center;
+	}
+
+	#infoObra h2 {
+		font-size: 20px;
+		font-family: 'Roboto';
+	}
+
+	section #comentar {
+		margin: 0 auto;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	section #comentar .enviar {		
+		background-color: rgb(193, 0, 60);
+		border-radius: 0.3em;
+		color: white;
+		float: right;		
+		font-family: 'Roboto';
+		font-size: 1em;
+		max-width: 15%;
+		margin-top: 1em;
+		padding: 0.6em 1.5em 0.6em 1.5em;
+		text-align: center;
+		width: 100%;
+	}
+
+	section #comentar .enviar:hover{
+		background-color: rgb(178, 0, 64);
+	}
+
+	section #comentar .enviar:active{
+		background-color: rgb(150, 0, 54);
+	}
+
+	.comentario {
+		clear: both;
+		margin: 0 auto;
+		margin-top: 5em;
+		padding-bottom: 7em;
+	}
+
+	.comentario .nombre {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.comentario .nombre figure {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	.comentario .nombre figure img{
+		width: 100%;
+	}
+	.comentario .nombre h3 {
+		display: inline-block;
+		font-family: 'Roboto';
+		font-size: 1.4em;
+	}
+	.comentario p {
+		font-family: 'Roboto';
+		font-size: 0.938em;
+		text-align: justify;
+	}
+
+/* -------------------------------- Info Create */
+#matrix {
+	height: auto;
+	margin-top: -0.7em;
+	padding: 0.5em;
+	width: 90%;
+}
+
+#comparteFinal {
+	width: 15%;
+	height: auto;
+}
+
+/* -------------------------------- Info Registro */
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width:100%;
+}
+
+	section figure .logo {	
+			margin-right: 25%;	
+			margin-left: 25%;
+			margin-top: 8em;
+			padding-top:1em;
+		}
+
+	section #registro {
+		width: 100%;
+		text-align: center;
+	}
+
+		section #registro .botonRegistro {
+			border-radius: 2em;
+			background-color: rgb(193, 0, 60);
+			display: inline-block;
+			margin-top: 5em;
+			width: 40%;
+			max-height: 5%;
+		}
+
+		section #registro .botonRegistro:hover {
+			background-color: rgb(178, 0, 64);
+		}
+
+		section #registro .botonRegistro:active {
+			background-color: rgb(150, 0, 54);
+		}
+
+		section #registro .botonRegistro h1 {
+			text-align: center;
+			font-weight: lighter;
+			height: auto;
+			margin-top: 10%;
+			color: black;
+			font-family: 'Bubbler One', sans-serif;
+		}
+
+
+#comparteFinal {
+	width: 4em;
+	height: 4em;
+}
+
+
+
